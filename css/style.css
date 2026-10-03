@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/press-start-2p-latin.woff2") format("woff2");
+}
+
+:root {
+  --purple: #3A2E5C;
+  --gold: #FFC857;
+  --white: #FFFFFF;
+  --pixel: "Press Start 2P", ui-monospace, Menlo, Consolas, monospace;
+  --body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--purple);
+  color: var(--white);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  padding: 24px 16px 48px;
+  text-align: center;
+}
+
+a { color: var(--gold); text-underline-offset: 3px; }
+a:hover { color: var(--white); }
+a:focus-visible, input:focus-visible, button:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 3px;
+}
+
+/* Press Start 2P sits on an 8px grid: keep it at 8px multiples, short headings only. */
+h2, .pixel {
+  font-family: var(--pixel);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+h1 { margin: 0; line-height: 0; }
+h2 { margin: 0 0 16px; }
+p { margin: 0 0 16px; }
+
+/* Logo: SVG pixel art, shown only at 0.5x and 1x of its native size so the grid stays even. */
+.logo { display: block; margin: 0 auto; width: 240px; height: 240px; }
+@media (min-width: 520px) { .logo { width: 480px; height: 480px; } }
+@media (min-width: 800px) { .logo { width: 720px; height: 300px; } }
+
+.tagline { font-size: 20px; margin: 8px 0 40px; }
+
+section { margin: 0 auto 40px; max-width: 520px; }
+
+.signup {
+  border: 4px solid var(--gold);
+  padding: 24px 16px;
+}
+.signup fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.signup label { display: block; margin-bottom: 8px; }
+.signup .row { display: flex; flex-wrap: wrap; gap: 8px; }
+.signup input {
+  flex: 1 1 220px;
+  min-width: 0;
+  height: 48px;
+  padding: 0 12px;
+  border: 4px solid var(--white);
+  border-radius: 0;
+  background: var(--white);
+  color: var(--purple);
+  font: inherit;
+}
+.signup button {
+  flex: 0 0 auto;
+  height: 48px;
+  padding: 0 16px;
+  border: 4px solid var(--gold);
+  border-radius: 0;
+  background: var(--gold);
+  color: var(--purple);
+  font-family: var(--pixel);
+  font-size: 16px;
+  cursor: pointer;
+}
+.signup fieldset:disabled input,
+.signup fieldset:disabled button { opacity: 0.5; cursor: not-allowed; }
+.signup .small { font-size: 15px; margin: 16px 0 0; }
+
+.notice {
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border: 4px dashed var(--white);
+  font-size: 16px;
+}
+.notice strong { color: var(--gold); }
+
+.contact dl { margin: 0; }
+.contact dt { font-weight: 700; }
+.contact dd { margin: 0 0 12px; overflow-wrap: anywhere; }
+
+footer {
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-size: 15px;
+}
+footer p { margin: 0; }
+
+/* Privacy page */
+.doc { text-align: left; max-width: 640px; }
+.doc .home { display: inline-block; margin-bottom: 24px; }
+.doc h1 {
+  font-family: var(--pixel);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+.doc h2 { margin-top: 40px; }
+.doc ul { padding-left: 24px; margin: 0 0 16px; }
+.doc .todo { color: var(--gold); font-weight: 700; }

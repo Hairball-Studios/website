@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hairball Studios</title>
+  <meta name="description" content="Hairball Studios is an indie game studio from Kentucky. Something is coming.">
+  <meta name="theme-color" content="#3A2E5C">
+  <link rel="canonical" href="https://hairballstudios.gg/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hairball Studios">
+  <meta property="og:title" content="Hairball Studios">
+  <meta property="og:description" content="An indie game studio from Kentucky. Something is coming.">
+  <meta property="og:url" content="https://hairballstudios.gg/">
+  <meta property="og:image" content="https://hairballstudios.gg/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hairball Studios logo: a pixel-art cat face giving a side-eye look">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preload" href="fonts/press-start-2p-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>
+      <picture>
+        <source media="(min-width: 800px)" srcset="img/horizontal-transparent.svg">
+        <img class="logo" src="img/stacked-transparent.svg" alt="Hairball Studios">
+      </picture>
+    </h1>
+
+    <p class="tagline">An indie game studio from Kentucky. Something is coming.</p>
+
+    <section class="signup" aria-labelledby="signup-heading">
+      <h2 id="signup-heading">Get launch news</h2>
+      <!-- NOT CONNECTED: no mailing-list service chosen yet. The form has no action and
+           is disabled on purpose. When a service is chosen, remove the notice, remove
+           `disabled` from the fieldset, and set the form's action/method. -->
+      <p class="notice" role="note"><strong>Not connected yet.</strong> This signup form does not work yet.</p>
+      <form>
+        <fieldset disabled>
+          <label for="email">Email address</label>
+          <div class="row">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <button type="submit">Notify me</button>
+          </div>
+        </fieldset>
+      </form>
+      <p class="small">Launch news only. See the <a href="privacy.html">privacy policy</a>.</p>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <dl>
+        <dt>General</dt>
+        <dd><a href="mailto:hello@hairballstudios.gg">hello@hairballstudios.gg</a></dd>
+        <dt>Press</dt>
+        <dd><a href="mailto:press@hairballstudios.gg">press@hairballstudios.gg</a></dd>
+      </dl>
+    </section>
+
+    <!-- SOCIAL LINKS: add here once the live accounts are confirmed. -->
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hairball Studios &middot; <a href="privacy.html">Privacy</a></p>
+  </footer>
+</body>
+</html>
