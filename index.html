@@ -40,19 +40,10 @@
 
     <section class="signup" aria-labelledby="signup-heading">
       <h2 id="signup-heading">Get launch news</h2>
-      <!-- NOT CONNECTED: no mailing-list service chosen yet. The form has no action and
-           is disabled on purpose. When a service is chosen, remove the notice, remove
-           `disabled` from the fieldset, and set the form's action/method. -->
-      <p class="notice" role="note"><strong>Not connected yet.</strong> This signup form does not work yet.</p>
-      <form>
-        <fieldset disabled>
-          <label for="email">Email address</label>
-          <div class="row">
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-            <button type="submit">Notify me</button>
-          </div>
-        </fieldset>
-      </form>
+      <!-- STOPGAP: no mailing-list service yet, so signup is an email to hello@.
+           Replace with the service's form once one is chosen. -->
+      <p>Email us and we will add you to the list.</p>
+      <p><a class="button" href="mailto:hello@hairballstudios.gg?subject=Launch%20news%20signup&amp;body=Please%20add%20me%20to%20the%20Hairball%20Studios%20launch%20news%20list.">Notify me</a></p>
       <p class="small">Launch news only. See the <a href="privacy.html">privacy policy</a>.</p>
     </section>
 
