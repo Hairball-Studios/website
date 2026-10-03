@@ -67,7 +67,8 @@ p { margin: 0 0 16px; }
 @media (min-width: 520px) { .logo { width: 480px; height: 480px; } }
 @media (min-width: 800px) { .logo { width: 720px; height: 300px; } }
 
-.tagline { font-size: 20px; margin: 8px 0 40px; }
+.tagline { font-size: 20px; margin: 8px 0 16px; }
+.tease { margin: 0 0 40px; }
 
 section { margin: 0 auto 40px; max-width: 520px; }
 
