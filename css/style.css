@@ -73,6 +73,38 @@ p { margin: 0 0 16px; text-wrap: balance; }
 
 section { margin: 0 auto 40px; max-width: 520px; }
 
+.reel-frame {
+  position: relative;
+  width: min(320px, 100%, calc(70svh * 9 / 16));
+  margin: 0 auto;
+  aspect-ratio: 9 / 16;
+  border: 4px solid var(--gold);
+  background: #000;
+}
+.reel-frame video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.reel-sound {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 8px 16px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.reel-sound[hidden] { display: none; }
+.reel-sound span {
+  padding: 8px 12px;
+  background: var(--gold);
+  color: var(--purple);
+  font-family: var(--pixel);
+  font-size: 8px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.reel-sound:hover span { background: var(--white); }
+
 .signup {
   border: 4px solid var(--gold);
   padding: 24px 16px;

@@ -40,6 +40,14 @@
     <p class="tagline">An indie game studio from Kentucky.</p>
     <p class="pixel tease">Three games in the works</p>
 
+    <section class="reel" aria-label="Studio reel">
+      <div class="reel-frame">
+        <video id="reel" src="video/hairball-reel.mp4" poster="video/hairball-reel-poster.jpg" width="720" height="1280" autoplay muted loop playsinline controls preload="auto" aria-label="Hairball Studios reel: a first look at three games"></video>
+        <button class="reel-sound" type="button" aria-label="Play the reel from the start with sound" hidden><span>Tap for sound</span></button>
+      </div>
+      <noscript><p class="small"><a href="video/hairball-reel.mp4">Watch the reel</a></p></noscript>
+    </section>
+
     <section class="signup" aria-labelledby="signup-heading">
       <h2 id="signup-heading">Get launch news</h2>
       <!-- Signup is a Google Form (link-out, not embedded). Swap for a mailing-list service once the list outgrows manual sending. -->
@@ -80,5 +88,6 @@
   <footer>
     <p>&copy; 2026 Hairball Studios &middot; <a href="privacy.html">Privacy</a></p>
   </footer>
+  <script src="js/reel.js" defer></script>
 </body>
 </html>
