@@ -68,8 +68,7 @@ p { margin: 0 0 16px; text-wrap: balance; }
 @media (min-width: 800px) { .logo { width: 720px; height: 300px; } }
 @media (min-width: 800px) and (max-height: 499px) { .logo { width: 360px; height: 150px; } }
 
-.tagline { font-size: 20px; margin: 8px 0 16px; }
-.tease { margin: 0 0 40px; }
+.tagline { font-size: 20px; margin: 8px 0 40px; }
 
 section { margin: 0 auto 40px; max-width: 520px; }
 
