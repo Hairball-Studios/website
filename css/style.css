@@ -60,7 +60,7 @@ h2, .pixel {
 
 h1 { margin: 0; line-height: 0; }
 h2 { margin: 0 0 16px; }
-p { margin: 0 0 16px; }
+p { margin: 0 0 16px; text-wrap: balance; }
 
 /* Logo: SVG pixel art, shown only at 0.5x and 1x of its native size so the grid stays even. */
 .logo { display: block; margin: 0 auto; width: 240px; height: 240px; }
@@ -99,6 +99,7 @@ section { margin: 0 auto 40px; max-width: 520px; }
 .social ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; }
 .social a { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; }
 .social svg { display: block; }
+.social .handle { margin: 12px 0 0; font-size: 16px; }
 
 footer {
   width: 100%;
@@ -142,7 +143,7 @@ footer p { margin: 0; }
 .link-list a {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 12px;
   min-height: 56px;
   padding: 12px 16px;
@@ -151,6 +152,7 @@ footer p { margin: 0; }
   overflow-wrap: anywhere;
 }
 .link-list .button {
+  justify-content: center;
   background: var(--gold);
   color: var(--purple);
   font-family: var(--pixel);
