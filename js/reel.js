@@ -35,4 +35,9 @@
   });
 
   video.addEventListener("ended", silentLoop);
+
+  // Tapping the reel during a sound run mutes it by dropping back to the silent loop.
+  video.addEventListener("click", function () {
+    if (!video.muted) silentLoop();
+  });
 })();
