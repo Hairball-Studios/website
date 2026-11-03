@@ -72,6 +72,8 @@ p { margin: 0 0 16px; text-wrap: balance; }
 figure.tagline { margin: 8px auto 24px; max-width: 520px; }
 .tagline blockquote { margin: 0; }
 .tagline blockquote p { margin: 0 0 8px; }
+.tagline .beat { display: inline-block; }
+@media (min-width: 800px) { .tagline { font-size: 22px; } figure.tagline { max-width: 640px; } }
 .tagline figcaption { font-size: 16px; color: var(--gold); }
 .cta { margin: 0 0 40px; }
 
