@@ -176,7 +176,7 @@ footer p { margin: 0; }
 
 /* Links page (QR landing from business cards) */
 .links .logo { width: 240px; height: 240px; }
-.links .tagline { margin: 8px 0 24px; }
+.links .tagline { margin: 8px auto 24px; }
 .link-list { list-style: none; margin: 0 auto; padding: 0; max-width: 360px; display: flex; flex-direction: column; gap: 16px; }
 .link-list a {
   display: flex;
